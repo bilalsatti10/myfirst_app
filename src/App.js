@@ -19,6 +19,13 @@ const App = () => {
     }));
   };
 
+  const closeAlertBox = (event) => {
+    const alertBox = event.target.closest('.w3-container');
+    if (alertBox) {
+      alertBox.style.display = 'none';
+    }
+  };
+
   return (
     <div className="w3-theme-l5">
       {/* Navbar */}
@@ -117,22 +124,22 @@ const App = () => {
                     <div className="w3-row-padding">
                       <br />
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/lights.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/lights.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Lights" />
                       </div>
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Nature" />
                       </div>
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/mountains.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/mountains.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Mountains" />
                       </div>
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/forest.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/forest.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Forest" />
                       </div>
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Nature" />
                       </div>
                       <div className="w3-half">
-                        <img src="https://www.w3schools.com/w3images/snow.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
+                        <img src="https://www.w3schools.com/w3images/snow.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Snow" />
                       </div>
                     </div>
                   </div>
@@ -163,17 +170,12 @@ const App = () => {
             <br />
 
             {/* Alert Box */}
-            <div className="w3-card w3-round w3-white w3-hide-small">
-              <div className="w3-container">
-                <p>Alert Box</p>
-                <div className="w3-container w3-theme-l4 w3-margin-bottom">
-                  <span className="w3-button w3-theme-l3 w3-right">x</span>
-                  <p>
-                    <strong>Danger!</strong>
-                  </p>
-                  <p>Red Often indicates a dangerous or negative situation.</p>
-                </div>
-              </div>
+            <div className="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom">
+              <span onClick={closeAlertBox} className="w3-button w3-theme-l3 w3-display-topright">
+                <i className="fa fa-remove"></i>
+              </span>
+              <p><strong>Hey!</strong></p>
+              <p>People are looking at your profile. Find out who.</p>
             </div>
           </div>
 
@@ -183,44 +185,46 @@ const App = () => {
               <div className="w3-col m12">
                 <div className="w3-card w3-round w3-white">
                   <div className="w3-container w3-padding">
-                    <h6 className="w3-opacity">Social Media</h6>
+                    <h6 className="w3-opacity">Social Media template by w3.css</h6>
                     <p contentEditable="true" className="w3-border w3-padding">Status: Feeling Blue</p>
-                    <button type="button" className="w3-button w3-theme"><i className="fa fa-pencil"></i> Post</button>
+                    <button type="button" className="w3-button w3-theme">
+                      <i className="fa fa-pencil"></i> &nbsp;Post
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="w3-container w3-card w3-white w3-round w3-margin"><br />
+            <div className="w3-container w3-card w3-white w3-round w3-margin">
+              <br />
               <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
               <span className="w3-right w3-opacity">1 min</span>
-              <h4>M Bilal satti</h4><br />
+              <h4>John Doe</h4><br />
               <hr className="w3-clear" />
               <p>Have you seen this?</p>
-              <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
-              <p>Design by <NavLink to="https://www.w3schools.com">w3.css</NavLink>.</p>
-              <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom"><i className="fa fa-thumbs-up"></i> Like</button>
-              <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom"><i className="fa fa-comment"></i> Comment</button>
+              <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Nature" />
+              <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom">
+                <i className="fa fa-thumbs-up"></i> &nbsp;Like
+              </button>
+              <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom">
+                <i className="fa fa-comment"></i> &nbsp;Comment
+              </button>
             </div>
 
-            <div className="w3-container w3-card w3-white w3-round w3-margin"><br />
+            <div className="w3-container w3-card w3-white w3-round w3-margin">
+              <br />
               <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
               <span className="w3-right w3-opacity">16 min</span>
-              <h4>M Bilal Satti</h4><br />
+              <h4>Jane Doe</h4><br />
               <hr className="w3-clear" />
-              <p>Just signed up for a JavaScript course!</p>
-              <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom"><i className="fa fa-thumbs-up"></i> Like</button>
-              <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom"><i className="fa fa-comment"></i> Comment</button>
-            </div>
-
-            <div className="w3-container w3-card w3-white w3-round w3-margin"><br />
-              <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
-              <span className="w3-right w3-opacity">32 min</span>
-              <h4>Angie Jane</h4><br />
-              <hr className="w3-clear" />
-              <p>Sharing this amazing article on React.js!</p>
-              <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom"><i className="fa fa-thumbs-up"></i> Like</button>
-              <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom"><i className="fa fa-comment"></i> Comment</button>
+              <p>Just finished reading a great book!</p>
+              <img src="https://www.w3schools.com/w3images/book.jpg" style={{ width: '100%' }} className="w3-margin-bottom" alt="Book" />
+              <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom">
+                <i className="fa fa-thumbs-up"></i> &nbsp;Like
+              </button>
+              <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom">
+                <i className="fa fa-comment"></i> &nbsp;Comment
+              </button>
             </div>
           </div>
 
@@ -231,10 +235,8 @@ const App = () => {
                 <p>Upcoming Events:</p>
                 <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style={{ width: '100%' }} />
                 <p><strong>Holiday</strong></p>
-                <p>Monday 10:00AM</p>
-                <p>
-                  <button className="w3-button w3-block w3-theme-l4">Info</button>
-                </p>
+                <p>Friday 15:00</p>
+                <p><button className="w3-button w3-block w3-theme-l4">Info</button></p>
               </div>
             </div>
             <br />
@@ -243,13 +245,17 @@ const App = () => {
               <div className="w3-container">
                 <p>Friend Request</p>
                 <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" style={{ width: '50%' }} /><br />
-                <span>Sara Ali</span>
+                <span>Jane Doe</span>
                 <div className="w3-row w3-opacity">
                   <div className="w3-half">
-                    <button className="w3-button w3-block w3-green w3-section" title="Accept"><i className="fa fa-check"></i></button>
+                    <button className="w3-button w3-block w3-green w3-section" title="Accept">
+                      <i className="fa fa-check"></i>
+                    </button>
                   </div>
                   <div className="w3-half">
-                    <button className="w3-button w3-block w3-red w3-section" title="Decline"><i className="fa fa-remove"></i></button>
+                    <button className="w3-button w3-block w3-red w3-section" title="Decline">
+                      <i className="fa fa-remove"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -262,22 +268,11 @@ const App = () => {
             <br />
 
             <div className="w3-card w3-round w3-white w3-padding-32 w3-center">
-              <p><i className="fa fa-bug w3-xxlarge"></i></p>
+              <p>ADS</p>
             </div>
           </div>
         </div>
       </div>
-
-      <br />
-
-      {/* Footer */}
-      <footer className="w3-container w3-theme-d3 w3-padding-16">
-        <h5>Footer</h5>
-      </footer>
-
-      <footer className="w3-container w3-theme-d5">
-        <p>Powered by <NavLink to="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener noreferrer">w3.css</NavLink></p>
-      </footer>
     </div>
   );
 };
