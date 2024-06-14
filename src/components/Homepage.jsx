@@ -1,33 +1,33 @@
 import React, { useState } from 'react';
-import './App.css'; // Create an App.css file to import W3.CSS and other styles
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
-const App = () => {
-  const [showNav, setShowNav] = useState(false);
-  const [accordionState, setAccordionState] = useState({
-    Demo1: false,
-    Demo2: false,
-    Demo3: false,
-  });
-
-  const toggleNav = () => setShowNav(!showNav);
-
-  const toggleAccordion = (id) => {
-    setAccordionState((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
-  };
-
-  const closeAlertBox = (event) => {
-    const alertBox = event.target.closest('.w3-container');
-    if (alertBox) {
-      alertBox.style.display = 'none';
-    }
-  };
-
-  return (
-    <div className="w3-theme-l5">
+const Homepage = ( ) =>{
+    const [showNav, setShowNav] = useState(false);
+    const [accordionState, setAccordionState] = useState({
+      Demo1: false,
+      Demo2: false,
+      Demo3: false,
+    });
+  
+    const toggleNav = () => setShowNav(!showNav);
+  
+    const toggleAccordion = (id) => {
+      setAccordionState((prevState) => ({
+        ...prevState,
+        [id]: !prevState[id],
+      }));
+    };
+  
+    const closeAlertBox = (event) => {
+      const alertBox = event.target.closest('.w3-container');
+      if (alertBox) {
+        alertBox.style.display = 'none';
+      }
+    };
+  
+    return (
+        <>
+        <div className="w3-theme-l5">
       {/* Navbar */}
       <div className="w3-top">
         <div className="w3-bar w3-theme-d2 w3-left-align w3-large">
@@ -274,7 +274,8 @@ const App = () => {
         </div>
       </div>
     </div>
-  );
-};
+        </>
+    )
+}
 
-export default App;
+export default  Homepage
