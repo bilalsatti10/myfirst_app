@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; // Create an App.css file to import W3.CSS and other styles
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const App = () => {
   const [showNav, setShowNav] = useState(false);
@@ -30,42 +30,42 @@ const App = () => {
           >
             <i className="fa fa-bars"></i>
           </button>
-          <Link to="#" className="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+          <NavLink to="#" className="w3-bar-item w3-button w3-padding-large w3-theme-d4">
             <i className="fa fa-home w3-margin-right"></i>Logo
-          </Link>
-          <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News">
+          </NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News">
             <i className="fa fa-globe"></i>
-          </Link>
-          <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings">
+          </NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings">
             <i className="fa fa-user"></i>
-          </Link>
-          <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages">
+          </NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages">
             <i className="fa fa-envelope"></i>
-          </Link>
+          </NavLink>
           <div className="w3-dropdown-hover w3-hide-small">
             <button className="w3-button w3-padding-large" title="Notifications">
               <i className="fa fa-bell"></i>
               <span className="w3-badge w3-right w3-small w3-green">3</span>
             </button>
             <div className="w3-dropdown-content w3-card-4 w3-bar-block" style={{ width: '300px' }}>
-              <Link to="#" className="w3-bar-item w3-button">One new friend request</Link>
-              <Link to="#" className="w3-bar-item w3-button">John Doe posted on your wall</Link>
-              <Link to="#" className="w3-bar-item w3-button">Jane likes your post</Link>
+              <NavLink to="#" className="w3-bar-item w3-button">One new friend request</NavLink>
+              <NavLink to="#" className="w3-bar-item w3-button">John Doe posted on your wall</NavLink>
+              <NavLink to="#" className="w3-bar-item w3-button">Jane likes your post</NavLink>
             </div>
           </div>
-          <Link to="#" className="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+          <NavLink to="#" className="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
             <img src="https://www.w3schools.com/w3images/avatar2.png" className="w3-circle" style={{ height: '23px', width: '23px' }} alt="Avatar" />
-          </Link>
+          </NavLink>
         </div>
       </div>
 
       {/* Navbar on small screens */}
       {showNav && (
         <div id="navDemo" className="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-          <Link to="#" className="w3-bar-item w3-button w3-padding-large">Link 1</Link>
-          <Link to="#" className="w3-bar-item w3-button w3-padding-large">Link 2</Link>
-          <Link to="#" className="w3-bar-item w3-button w3-padding-large">Link 3</Link>
-          <Link to="#" className="w3-bar-item w3-button w3-padding-large">My Profile</Link>
+          <NavLink to="#" className="w3-bar-item w3-button w3-padding-large">Link 1</NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-padding-large">Link 2</NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-padding-large">Link 3</NavLink>
+          <NavLink to="#" className="w3-bar-item w3-button w3-padding-large">My Profile</NavLink>
         </div>
       )}
 
@@ -198,7 +198,7 @@ const App = () => {
               <hr className="w3-clear" />
               <p>Have you seen this?</p>
               <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
-              <p>Design by <Link to="https://www.w3schools.com">w3.css</Link>.</p>
+              <p>Design by <NavLink to="https://www.w3schools.com">w3.css</NavLink>.</p>
               <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom"><i className="fa fa-thumbs-up"></i> Like</button>
               <button type="button" className="w3-button w3-theme-d2 w3-margin-bottom"><i className="fa fa-comment"></i> Comment</button>
             </div>
@@ -276,7 +276,7 @@ const App = () => {
       </footer>
 
       <footer className="w3-container w3-theme-d5">
-        <p>Powered by <Link to="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener noreferrer">w3.css</Link></p>
+        <p>Powered by <NavLink to="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener noreferrer">w3.css</NavLink></p>
       </footer>
     </div>
   );
