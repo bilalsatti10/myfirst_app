@@ -90,7 +90,7 @@ const Homepage = () => {
                     <img src="avatar3.png" className="w3-circle" style={{ height: '106px', width: '106px' }} alt="Avatar" />
                   </p>
                   <hr />
-                  <p><i className="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Wen Developer,CV and Resume Designer & Logo Creator </p>
+                  <p><i className="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Web Developer & Resume Designer </p>
                   <p><i className="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Pakistan,Rawalpindi</p>
                   <p><i className="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> December 12, 2003</p>
                 </div>
