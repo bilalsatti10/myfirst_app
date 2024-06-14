@@ -84,7 +84,7 @@ const App = () => {
                 <hr />
                 <p><i className="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
                 <p><i className="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-                <p><i className="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+                <p><i className="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> December 12, 2003</p>
               </div>
             </div>
             <br />
@@ -182,7 +182,7 @@ const App = () => {
               <div className="w3-col m12">
                 <div className="w3-card w3-round w3-white">
                   <div className="w3-container w3-padding">
-                    <h6 className="w3-opacity">Social Media template by w3.css</h6>
+                    <h6 className="w3-opacity">Social Media</h6>
                     <p contentEditable="true" className="w3-border w3-padding">Status: Feeling Blue</p>
                     <button type="button" className="w3-button w3-theme"><i className="fa fa-pencil"></i> Post</button>
                   </div>
@@ -193,7 +193,7 @@ const App = () => {
             <div className="w3-container w3-card w3-white w3-round w3-margin"><br />
               <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
               <span className="w3-right w3-opacity">1 min</span>
-              <h4>John Doe</h4><br />
+              <h4>M Bilal satti</h4><br />
               <hr className="w3-clear" />
               <p>Have you seen this?</p>
               <img src="https://www.w3schools.com/w3images/nature.jpg" style={{ width: '100%' }} className="w3-margin-bottom" />
@@ -205,7 +205,7 @@ const App = () => {
             <div className="w3-container w3-card w3-white w3-round w3-margin"><br />
               <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{ width: '60px' }} />
               <span className="w3-right w3-opacity">16 min</span>
-              <h4>Jane Doe</h4><br />
+              <h4>M Bilal Satti</h4><br />
               <hr className="w3-clear" />
               <p>Just signed up for a JavaScript course!</p>
               <button type="button" className="w3-button w3-theme-d1 w3-margin-bottom"><i className="fa fa-thumbs-up"></i> Like</button>
@@ -230,7 +230,7 @@ const App = () => {
                 <p>Upcoming Events:</p>
                 <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style={{ width: '100%' }} />
                 <p><strong>Holiday</strong></p>
-                <p>Friday 15:00</p>
+                <p>Monday 10:00AM</p>
                 <p>
                   <button className="w3-button w3-block w3-theme-l4">Info</button>
                 </p>
@@ -242,7 +242,7 @@ const App = () => {
               <div className="w3-container">
                 <p>Friend Request</p>
                 <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" style={{ width: '50%' }} /><br />
-                <span>Jane Doe</span>
+                <span>Sara Ali</span>
                 <div className="w3-row w3-opacity">
                   <div className="w3-half">
                     <button className="w3-button w3-block w3-green w3-section" title="Accept"><i className="fa fa-check"></i></button>
